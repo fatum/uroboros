@@ -24,3 +24,4 @@ uroboros-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
+workspace.code-workspace
