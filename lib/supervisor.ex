@@ -4,7 +4,7 @@ defmodule Uroboros.Supervisor do
   alias Uroboros.Index.Supervisor, as: IndexSupervisor
   alias Uroboros.Log.Supervisor, as: LogSupervisor
 
-  def init([data_dir]) do
+  def init(_) do
     children = [
       IndexSupervisor,
       LogSupervisor

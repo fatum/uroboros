@@ -4,7 +4,8 @@ defmodule Uroboros do
   """
 
   alias Uroboros.Index.Supervisor, as: IndexSupervisor
-  alias Uroboros.Log.Supervisor, as: LogSupervisor
+
+  def data_dir, do: "/tmp/uroboros"
 
   def open(db_name) when is_atom(db_name), do: open(Atom.to_string(db_name))
 
